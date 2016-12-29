@@ -6,14 +6,14 @@ var	a = 2;
 
 if (value > 0) {
 
-    console.log("wynik dodatni");
+	console.log("wynik dodatni");
 
 } 
 else if (value < 0) {
 
 	console.log("wynik ujemny");
 }
-else (value == 0) {
+else (value == 0) 
 
 	console.log ("wynik jest równy zero")
-}
+
