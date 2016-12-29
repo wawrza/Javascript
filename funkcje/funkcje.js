@@ -1,8 +1,8 @@
 // plik funkcje.js
 
-var triangle1Area = getTriangleArea(10, 15);
-triangle2Area = getTriangleArea(12, 18);
-triangle3Area = getTriangleArea(15, 21);
+var	triangle1Area = getTriangleArea(10, 15);
+	triangle2Area = getTriangleArea(12, 18);
+	triangle3Area = getTriangleArea(15, 21);
 
 function getTriangleArea(a, h) {
 
