@@ -10,7 +10,7 @@ function getTriangleArea(a, h) {
         return;
 }return (a*h/2);
 }
-	console.log( getTriangleArea(10, 6) );
-	console.log( getTriangleArea(10, 15) );
-	console.log( getTriangleArea(12, 18) );
-	console.log( getTriangleArea(15, 21) );
+    console.log( getTriangleArea(10, 6) );
+    console.log( getTriangleArea(10, 15) );
+    console.log( getTriangleArea(12, 18) );
+    console.log( getTriangleArea(15, 21) );
