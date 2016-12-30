@@ -1,6 +1,6 @@
 // plik ciagi.js
 
-var text = "Papugi koszą trawę, unosząc się nad ziemią 15 centymetrów, na czerwonych dywanach.",
+var	text = "Papugi koszą trawę, unosząc się nad ziemią 15 centymetrów, na czerwonych dywanach.",
 	text2 = "Zielone słonie",
 	text2UpperCased = text2.toUpperCase(),
 	animal = text.slice(0,6),
