@@ -1,6 +1,6 @@
 // plik eventy.js
 
-var	list = document.getElementById('Lista'),
+var list = document.getElementById('Lista'),
 	add = document.getElementById('addElem'),
 	newElem = document.createElement('li');
 
