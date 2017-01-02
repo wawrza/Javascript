@@ -2,11 +2,11 @@
 
 var list = document.getElementById('Lista'),
     add = document.getElementById('addElem'),
-    newElem = document.createElement('li');
+    newElem = document.createElement('li'),
     index = document.getElementsByTagName('li');
     
     add.addEventListener('click', function plus(plus) {
-        newElem.innerHTML += '<li>item</li>' + [index.length];
-        list.appendChild(newElem);
+        next = list.getElementsByTagName('li').length;
+        list.innerHTML += '<li>item '+ next +'</li>';
+        console.log(next);
 });
-    console.log(index.length);
