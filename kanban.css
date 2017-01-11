@@ -1,16 +1,16 @@
-
+@import url('https://fonts.googleapis.com/css?family=Anton|Lato');
 * {
-  box-sizing: border-box; }
-
+  box-sizing: border-box; 
+}
 body {
-  background-color: #6633CC;
-  color: #663399;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  background: rgb(197, 193, 237);
 }
 .board {
   min-height: 50px;
   text-align: center;
-  background: #6633CC;
-  border-radius: 10px;
+  background: rgb(197, 193, 237);
 }
 .btn-primary {
   background-color: #0658b5;
@@ -18,7 +18,6 @@ body {
 }
 .create-column {
   background-color: #fff;
-  border-color: #0658b5;
   color: #6633CC;
 }
 .table-title {
@@ -27,14 +26,17 @@ body {
 }
 .button-container {
   margin-bottom: 40px;
+  border-radius: 50%;
 }
 .column {
   margin-right: 50px;
   margin-bottom: 20px;
-  height: 600px;
+  background-color: rgb(98, 92, 157);
+  color: rgb(40, 34, 104);
+  min-height: 100px;
   width: 300px;
-  background: #efefef;
   padding: 20px;
+  border-radius: 10px;
 }
 .column-card-list {
   min-height: 50px;
@@ -49,13 +51,9 @@ li {
   margin: 10px auto;
   list-style: none;
   padding: 20px;
+  font-family: 'Lato', sans-serif;
+  padding: 10px;
 }
 ul {
   padding-left: 0px;
-}
-.card-placeholder {
-  height: 50px;
-  width: 100%;
-  background: rgba(255,255,255,.4);
-  margin-bottom: 10px;
 }
