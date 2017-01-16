@@ -90,12 +90,14 @@ $(function() {
 
 	$('.create-column')
  			.click(function(){
- 				var name = prompt('Write column name');
- 				var column = new Column(name);
- 				board.addColumn(column);
-				var columnId =	$('.column');
+ 				var name;
+ 				do {
+        			name = prompt('Write column name');
+        		} while (name === ''); 
+        		var column = new Column(name);
+        		board.addColumn(column);
+        		var columnId =  $('.column');
 	});
-
 
 	var todoColumn = new Column('To do');
 	var doingColumn = new Column('Doing');
@@ -118,3 +120,4 @@ $(function() {
   					$(this).addClass('column-'+ index);
 					});
 });
+
