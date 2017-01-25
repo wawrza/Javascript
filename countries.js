@@ -158,8 +158,8 @@ $('#search').click(searchCountries);
 $('#random').click(randomCountries);
 
 $(document).bind("keydown", function (event) {
-    if (event.which === "13") {
-        $("#search").click(searchCountries);
+    if (event.which === 13) {
+        $("#search").click();
     }
 });
 
