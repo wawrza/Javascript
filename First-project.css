@@ -1,0 +1,635 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* beginning of code */ 
+* {
+	box-sizing: border-box;	
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.row:before, .row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+[class*="col-"] {
+	float: left;
+	min-height: 1px;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.col-1 { width: 8.33333333%; }
+.col-2 { width: 16.66666667%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33333333%; }
+.col-5 { width: 41.66666667%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33333333%; }
+.col-8 { width: 66.66666667%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33333333%; }
+.col-11 { width: 91.66666667%; }
+.col-12 { width: 100%; }
+
+.col-offset-0 { margin-left: 0; }
+.col-offset-1 { margin-left: 8.33%; }
+.col-offset-2 { margin-left: 16.66%; }
+.col-offset-3 { margin-left: 25%; }
+.col-offset-4 { margin-left: 33.33%; }
+.col-offset-5 { margin-left: 41.66%; }
+.col-offset-6 { margin-left: 50%; }
+.col-offset-7 { margin-left: 58.33%; }
+.col-offset-8 { margin-left: 66.66%; }
+.col-offset-9 { margin-left: 75%; }
+.col-offset-10 { margin-left: 83.33%; }
+.col-offset-11 { margin-left: 91.66%; }
+
+/*Header Menu*/
+
+.header {
+	background-color: #313234;
+	text-transform: uppercase;
+	padding: 12px;
+}
+
+.header ul {
+	list-style-type: none;
+	text-align: center;
+	float: right;
+}
+
+.header ul li {
+	display: inline-block;
+	padding: 0 20px;
+}
+
+.header a {
+	text-decoration: none;
+	font-size: 20px;
+	line-height: 50px;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.header ul li a:hover {
+	color: #f21515;
+	transition: 0.2s;
+}
+
+/*Welcome picture*/
+.welcome {
+	background-image: url("https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/1Q2U0J72YG.jpg");
+	height: 500px;
+	background-size: cover;
+	background-position: 70%;
+}
+.slogan {
+	float: right;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	right: 0;
+	top: 300px;
+	padding: 20px;
+	color: #ffffff;
+	text-shadow: 2px 2px #f21515;
+	font-size: 40px;
+}
+
+/*Service*/
+
+.service1 {
+	width: 900px;
+	height: 150px;
+	text-align: center;
+	margin: 50px auto;
+}
+
+.service2 {
+	width: 900px;
+	height: 150px;
+	text-align: center;
+	margin: 50px auto;
+}
+
+.fa {
+	font-size: 50px;
+}
+
+.service1 button {
+	border-style: none;
+	background-color: #313234;
+	color: #ffffff;
+	border-radius: 90px;
+	height: 70px;
+	width: 70px;
+}
+
+.service1 button:hover {
+	background-color: #f21515;
+	transition: 0.2s;
+}
+
+.service1 h3 {
+	font-size: 25px;
+	text-transform: uppercase;
+	margin: 15px auto;
+	color: #000000;
+}
+
+.service2 h3 {
+	font-size: 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 30px 0;
+	color: #000000;
+}
+
+.service1 p {
+	color: #535353;
+	line-height: 18px;
+	font-size: 17px;
+	padding: 0 10px;
+}
+
+.service2 p {
+	color: #535353;
+	line-height: 18px;
+	font-size: 17px;
+}
+
+/*Galeria*/
+
+.pracownicy {
+	width: 900px;
+	margin: 0 auto;
+}
+
+.pracownicy h3 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 25px;
+	margin-bottom: 50px;
+	font-weight: bold;
+	color: #535353;
+}
+
+.galeria1 p {
+	font-size: 20px;
+	text-align: center;
+	line-height: 170px;	
+	display: none;
+}
+
+.maly1:hover  p {
+ 	display: block;
+ 	z-index: 2;
+ 	position: absolute;
+ 	width: 100%;
+ 	background-color: rgba(0, 0, 0, 0.5);
+ 	color: #ffffff;
+ 	background-size: 100%;
+}
+
+.duzy {
+    width: 40%;
+}
+
+.maly, .maly1 {
+    width: 20%;
+    z-index: 1;
+}
+
+.galeria1 > div, .galeria2 > div {
+  float: left;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+}
+
+.maly img, .maly1 img, .duzy img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+
+/*Pracownicy*/
+
+.row:before, 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.prac {
+  text-align: center;
+}
+
+.prac > div:hover .layer {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.prac > div:hover .layer p {
+  display: block;
+}
+
+.layer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0);
+  transition: 0.5s background;
+  line-height: 200px;
+}
+
+.layer p {
+  color: #fff;
+  display: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.prac > div {
+  width: 200px;
+  height: 200px;
+  line-height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin: 90px 0 10px 55px;
+}
+
+.pracownicy img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Opis*/
+
+.opis {
+	width: 900px;
+	margin: 0 auto;
+	height: 400px;
+}
+
+.opis img {
+	margin-top: 80px;
+	height: 250px;
+}
+
+.opis p {
+	text-align: justify;
+	color: #ffffff;
+	padding: 50px 0 100px 50px;
+	font-size: 20px;
+	font-family: Lato;
+}
+
+.opis h2 {
+	font-size: 35px;
+	color: #ffffff;
+	padding-top: 90px;
+	font-family: Bree Serif;
+}
+
+.tlo {
+	background-color: #313234;
+}
+
+/*Liczby*/
+
+.liczby {
+	text-align: center;
+	width: 900px;
+	margin: 20px auto 0 auto;
+	height: 200px;
+	line-height: 40px;
+}
+
+.liczby h2 {
+	font-size: 40px;
+	color: #000000;
+	margin-top: 32px;
+	font-weight: bold;
+}
+
+.liczby p {
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #33cccc;
+}
+/*Stopka*/
+.stopka {
+	background-color: #313234;
+}
+.stopka1 {
+	height: 250px;
+	margin: 0 auto;
+}
+.stopka2 {
+	background-color: #2a2a2a;
+	color: #848484;
+	padding: 10px 0;
+	text-align: center;
+}
+.stopka1 p, a, h2 {
+	text-align: center;
+	color: #ffffff;
+}
+.stopka1 h2 {
+	font-size: 25px;
+	padding-top: 60px;
+	font-weight: bold;
+}
+.stopka1 p {
+	font-size: 15px;
+	line-height: 30px;
+}
+.stopka1 a {
+	display: block;
+	font-size: 15px;
+	line-height: 30px;
+}
+.pozycja {
+	text-align: center;
+	margin: 10px auto;
+}
+.icon-btn {
+	float: none;
+	height: 60px;
+	width: 60px;
+	border: 0;
+	background-color: #ffffff;
+	border-radius: 45px;
+	font-size: 40px;
+}
+.twitter {
+	color: #4099ff;
+}
+.facebook {
+	color: #3b5998;
+}
+.google-plus {
+	color: #db5a3c;
+}
+.twitter:hover  {
+	background-color: #4099ff;
+	color: #ffffff;
+	transition: 0.3s;
+}
+.facebook:hover  {
+	background-color: #3b5998;
+	color: #ffffff;
+	transition: 0.3s;
+}
+.google-plus:hover  {
+	background-color: #db5c3c;
+	color: #ffffff;
+	transition: 0.3s;
+	text-align: center;
+}
+.button {
+	border-style: none;
+	font-size: 35px;
+	margin: 0 10px;
+}
+button:hover {
+	color: #ffffff;
+	transition: 0.3s;
+	cursor: pointer;
+}
+@media (max-width: 768px) {
+  	.responsive {
+  		max-width: 100%;
+		height: auto;
+}
+	.container-s {
+    	float: none; 
+    	display: block;
+}
+	.header ul {
+		float: right;
+}
+	.header ul li {
+		display: inline-block;
+}
+	.welcome {
+		background-size: cover;
+		background-repeat: no-repeat;
+}
+	.service1 {
+		width: 100%;
+		height: auto;
+}
+	.service2,
+    .stopka1,
+    .pracownicy,
+    .opis,
+    .liczby {
+		width: 100%
+    }
+   	.duzy {
+    	width: 34%;
+}
+	.maly, .maly1 {
+    	width: 22%;
+}
+	.prac > div {
+		width: 130px;
+		height: 130px;
+}
+	.col-4 {
+    	width: 33.33333333%;
+}
+	.col-8 {
+    	width: 60%;
+    	padding: 0 20px;
+}
+.opis .col-4 {
+	width: 50%;
+}
+.opis img {
+	height: auto;
+	margin-right: 30px;
+}
+.opis .col-8 {
+	width: 50%;
+}
+.col-8 h2 {
+	font-size: 28px;
+}
+.opis p {
+    padding: 20px 20px 10px 20px;
+    font-size: 18px;
+}
+.maly img, 
+.maly1 img, 
+.duzy img {
+  	height: 100%;
+}
+.pozycja {
+	text-align: center;
+	margin: 10px auto;
+}
+.layer {
+	line-height: 130px;
+}
+.layer p {
+	font-size: 12px;
+}
+.icon-btn {
+	height: 30px;
+	width: 30px;
+}
+.button {
+	font-size: 20px;
+	line-height: 20px;
+}
+.stopka1 {
+	height: 200px;
+}
+}
+@media (max-width: 479px) {
+.service1 .col {
+	width: 100%;
+    margin-bottom: 50px;
+}
+.service1 {
+	margin-bottom: 25px;
+}
+.service2 {
+	margin: 0 auto;
+}
+.service2 h3 {
+    margin-top: 0;
+}
+.galeria1 > div,
+.galeria2 > div {
+    height: auto;
+    width: 100%;
+    padding-top: 75%;
+}
+.prac > div {
+    margin: 0;
+    display: inline-block;
+}
+.opis p {
+    padding: 30px 20px;
+    font-size: 15px;
+}
+.prac,
+.col-3,
+.col-4,
+.col-8 {
+	width: 100%;
+}
+.galeria2 div:nth-child(3) {
+	margin-bottom: 25px;
+}
+.stopka {
+	background-color: #ffffff;
+}
+.opis img {
+	margin: 0 auto;
+	float: none;
+	padding-top: 70px;
+}
+.opis h2 {
+	padding-top: 10px;
+	font-size: 25px;
+}
+.galeria1 {
+    overflow: hidden;
+}
+.pozycja {
+	margin: 0 auto;
+}
+.liczby {
+	margin: 0;
+}
+.opis {
+	max-height: 300px;
+}
+.prac {
+	padding-top: 30px;
+}
+.maly img {
+	margin-top: 20px;
+}
+.duzy img {
+	padding-bottom: 20px;
+}
+.icon-btn {
+	float: none;
+}
+}
+@media (max-width: 425px) {
+	.opis p {
+		font-size: 13px;
+		padding: 10px 10px 0 10px;
+}
+	.liczby h2 {
+		margin-top: 22px;
+}
+	.service2 p {
+		font-size: 15px;
+}
+}
